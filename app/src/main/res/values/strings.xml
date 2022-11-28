@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">CalcRatio</string>
+    <string name="sym_x">X</string>
+    <string name="raschet">Расчет</string>
+    <string name="tire">-</string>
 </resources>
