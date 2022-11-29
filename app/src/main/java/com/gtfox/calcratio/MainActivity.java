@@ -1,5 +1,6 @@
 package com.gtfox.calcratio;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
@@ -86,5 +87,12 @@ public class MainActivity extends AppCompatActivity {
         } else {
             return Double.parseDouble(edittext.getText().toString());
         }
+    }
+
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setMessage("Выйти из программы?")
+                .setCancelable(false)
+                .setPositiveButton("Да", (dialog, id) -> finish()).setNegativeButton("Нет", null).show();
     }
 }
